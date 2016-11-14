@@ -1,0 +1,125 @@
+
+
+
+
+
+/* Sheet Type */
+.charsheet input.sheet-type {
+    float: right;
+    margin-top: 3px;
+}
+.charsheet span.sheet-type {
+    float: right;
+}
+.charsheet div.sheet-type-content {
+    display: none;
+}
+.charsheet input.sheet-type:checked ~ div.sheet-type2 {
+    display: block;
+    border: 25px solid green;
+    float: left;
+}
+.charsheet input.sheet-type:not(:checked) ~ div.sheet-type1 {
+    display: block;
+    float: left;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.charsheet div.sheet-combatdetail-content {
+    display: none;
+}
+.charsheet input.sheet-combatdetail:checked ~ div.sheet-combatdetail1 {
+    display: block;
+}
+.charsheet input.sheet-combatdetail:not(:checked) ~ div.sheet-combatdetail2 {
+    display: block;
+    background: whitesmoke;
+    padding: 10px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.charsheet table.sheet-ability-table {
+    border-collapse: separate;
+    min-width:700px; 
+    table-layout: auto;
+}
+.charsheet table.sheet-ability-table-sub {
+    min-width:600px; 
+    min-height:60px; 
+    table-layout: auto;
+    text-align:center;
+    font-weight: bold;
+    border: 2px solid black;
+    background: wheat;
+}
+.charsheet tr.sheet-ability-row-odd {
+    background-color:lemonchiffon
+}
+.charsheet tr.sheet-ability-row-even {
+    background-color:palegoldenrod
+}
+.charsheet td.sheet-ability-cell-stat {
+    border: 1px solid black;
+    background-color:beige;
+}
+.charsheet td.sheet-ability-col-odd {
+    text-align:center;
+    font-weight: bold;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+}
+.charsheet td.sheet-ability-col-even {
+    text-align:center;
+    font-weight: bold;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+
+}
+
+.charsheet label.sheet-ability-label {
+    font-family: "Lucida Console", Georgia, Serif;
+    font-size:18pt;
+    text-align:center;
+    display: block; 
+    padding-top: 10px;
+}
+.charsheet input.sheet-ability-attr {
+    width: 40px;
+    height: 40px;
+    font-size:14pt;
+    text-align: center; 
+    pointer-events: none;
+    border-radius:20px;
+    background: linear-gradient(#eee, #fff);
+    border: 3px solid black;
+    box-shadow: 
+        inset 0 1px 4px rgba(0,0,0,0.4);
+}
+.charsheet input.sheet-ability-attr-sub {
+    width: 35px;
+}
+.charsheet input.sheet-ability-attr-sub-wide {
+    width: 50px;
+    border: 1px solid black;
+    padding-bottom: 5px;
+    border-radius:5px;
+    background: linear-gradient(#eee, #fff);
+    box-shadow: 
+        inset 0 1px 4px rgba(0,0,0,0.4);
+}
+
+
+.charsheet textarea.sheet-ability-attr-sub-area {
+	width: 120px;
+	height: 30px;
+	display: block; 
+	margin-top: 8px;
+	border-radius:5px;
+	border: 1px solid black;
+    background: linear-gradient(#eee, #fff);
+    box-shadow: 
+        inset 0 1px 4px rgba(0,0,0,0.4);
+
+}
+
+
