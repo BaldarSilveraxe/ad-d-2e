@@ -1,0 +1,152 @@
+<span class="sheet-type"> - Make NPC</span><input type="checkbox" name="attr_sheet_type" class="sheet-type" title="Make NPC"/>
+
+<div class="sheet-type-content sheet-type1">
+    <h2>Player Sheet</h2>
+    <input type="checkbox" name="attr_combatdetail" class="sheet-combatdetail"/> - Combat Detailed
+    <div class="sheet-combatdetail-content sheet-combatdetail1">
+        low
+    </div>
+    <div class="sheet-combatdetail-content sheet-combatdetail2">
+        <table class="sheet-ability-table">
+            <tr>
+                <td><input class="sheet-ability-attr" type="text" name="attr_strength" value="18"></td>
+                <td><label class="sheet-ability-label">STR</label></td>
+                <td>
+                    <table class="sheet-ability-table-sub">
+                        <tr>
+                            <td>Bonus</td>
+                            <td>Hit Adj</td>
+                            <td>Dam Adj</td>
+                            <td>Wgt Adj</td>
+                            <td>Max Press</td>
+                            <td>Open Door</td>
+                            <td>Bend Bars</td>
+                        </tr>
+                        <tr>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_hit" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_hit" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_dam" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_wgt" value="1,750"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_max_press" value="1,750"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_open" value="19(18)"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_bblg" value="10"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td><input class="sheet-ability-attr" type="text" name="attr_intelligence" value=""></td>
+                <td><label class="sheet-ability-label">INT</label></td>
+                <td>
+                    <table class="sheet-ability-table-sub">
+                        <tr>
+                            <td># of Lang.</td>
+                            <td>Spell Level</td>
+                            <td>% Learn</td>
+                            <td>Max # Spells/Lvl</td>
+                            <td rowspan="2">Illusion<br>Immunity</td>
+                            <td rowspan="2"><textarea class="sheet-ability-attr-sub-area" type="text" name="attr_intelligence_immunity"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_intelligence_addlang" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_intelligence_spell_level" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_intelligence_chance_learn" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_intelligence_max_spells_lvl" value="10"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td><input class="sheet-ability-attr" type="text" name="attr_wisdom" value=""></td>
+                <td><label class="sheet-ability-label">WIS</label></td>
+                <td>
+                    <table class="sheet-ability-table-sub">
+                        <tr>
+                            <td>Defense Adj</td>
+                            <td>Spell Bonus</td>
+                            <td>Chance Failure</td>
+                            <td rowspan="2">Spell<br>Immunity</td>
+                            <td rowspan="2"><textarea class="sheet-ability-attr-sub-area" type="text" name="attr_wisdom_immunity"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_wisdom_def_adj" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_wisdom_spell_bonus" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_wisdom_chance_failure" value="10"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td><input class="sheet-ability-attr" type="text" name="attr_dexterity" value=""></td>
+                <td><label class="sheet-ability-label">DEX</label></td>
+                <td>
+                    <table class="sheet-ability-table-sub">
+                        <tr>
+                            <td>Reaction Adj</td>
+                            <td>Missile Adj</td>
+                            <td>Defense Adj</td>
+                        </tr>
+                        <tr>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_dexterity_reaction_adj" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_dexterity_missile_adj" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_dexterity_defense_adj" value="10"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td><input class="sheet-ability-attr" type="text" name="attr_constitution" value=""></td>
+                <td><label class="sheet-ability-label">DEX</label></td>
+                <td>
+                    <table class="sheet-ability-table-sub">
+                        <tr>
+                            <td>Hit Point Adj</td>
+                            <td>System Shock</td>
+                            <td>Resurrection Survival</td>
+                            <td>Poison Save</td>
+                            <td>Regeneration</td>
+                        </tr>
+                        <tr>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_constitution_hp_adj" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_constitution_system_shock" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_constitution_resurrection_survival" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_constitution_poison_save" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_constitution_regeneration" value="10"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td><input class="sheet-ability-attr" type="text" name="attr_charisma" value=""></td>
+                <td><label class="sheet-ability-label">CHR</label></td>
+                <td>
+                    <table class="sheet-ability-table-sub">
+                        <tr>
+                            <td># of Henchmen</td>
+                            <td>Loyalty Base</td>
+                            <td>Reaction Adjustment</td>
+                        </tr>
+                        <tr>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_charisma_num_of_henchmen" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_charisma_loyalty_base" value="10"></td>
+                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_charisma_reaction_adj" value="10"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="sheet-type-content sheet-type2">
+    
+    <h2>NPC Sheet</h2>
+    
+</div>
+
+
