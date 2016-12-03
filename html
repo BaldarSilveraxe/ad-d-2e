@@ -1,152 +1,564 @@
-<span class="sheet-type"> - Make NPC</span><input type="checkbox" name="attr_sheet_type" class="sheet-type" title="Make NPC"/>
-
-<div class="sheet-type-content sheet-type1">
-    <h2>Player Sheet</h2>
-    <input type="checkbox" name="attr_combatdetail" class="sheet-combatdetail"/> - Combat Detailed
-    <div class="sheet-combatdetail-content sheet-combatdetail1">
-        low
-    </div>
-    <div class="sheet-combatdetail-content sheet-combatdetail2">
-        <table class="sheet-ability-table">
-            <tr>
-                <td><input class="sheet-ability-attr" type="text" name="attr_strength" value="18"></td>
-                <td><label class="sheet-ability-label">STR</label></td>
-                <td>
-                    <table class="sheet-ability-table-sub">
-                        <tr>
-                            <td>Bonus</td>
-                            <td>Hit Adj</td>
-                            <td>Dam Adj</td>
-                            <td>Wgt Adj</td>
-                            <td>Max Press</td>
-                            <td>Open Door</td>
-                            <td>Bend Bars</td>
-                        </tr>
-                        <tr>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_hit" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_hit" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_dam" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_wgt" value="1,750"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_max_press" value="1,750"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_open" value="19(18)"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_strength_bblg" value="10"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr><td>&nbsp;</td></tr>
-            <tr>
-                <td><input class="sheet-ability-attr" type="text" name="attr_intelligence" value=""></td>
-                <td><label class="sheet-ability-label">INT</label></td>
-                <td>
-                    <table class="sheet-ability-table-sub">
-                        <tr>
-                            <td># of Lang.</td>
-                            <td>Spell Level</td>
-                            <td>% Learn</td>
-                            <td>Max # Spells/Lvl</td>
-                            <td rowspan="2">Illusion<br>Immunity</td>
-                            <td rowspan="2"><textarea class="sheet-ability-attr-sub-area" type="text" name="attr_intelligence_immunity"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_intelligence_addlang" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_intelligence_spell_level" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_intelligence_chance_learn" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_intelligence_max_spells_lvl" value="10"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr><td>&nbsp;</td></tr>
-            <tr>
-                <td><input class="sheet-ability-attr" type="text" name="attr_wisdom" value=""></td>
-                <td><label class="sheet-ability-label">WIS</label></td>
-                <td>
-                    <table class="sheet-ability-table-sub">
-                        <tr>
-                            <td>Defense Adj</td>
-                            <td>Spell Bonus</td>
-                            <td>Chance Failure</td>
-                            <td rowspan="2">Spell<br>Immunity</td>
-                            <td rowspan="2"><textarea class="sheet-ability-attr-sub-area" type="text" name="attr_wisdom_immunity"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_wisdom_def_adj" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_wisdom_spell_bonus" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_wisdom_chance_failure" value="10"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr><td>&nbsp;</td></tr>
-            <tr>
-                <td><input class="sheet-ability-attr" type="text" name="attr_dexterity" value=""></td>
-                <td><label class="sheet-ability-label">DEX</label></td>
-                <td>
-                    <table class="sheet-ability-table-sub">
-                        <tr>
-                            <td>Reaction Adj</td>
-                            <td>Missile Adj</td>
-                            <td>Defense Adj</td>
-                        </tr>
-                        <tr>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_dexterity_reaction_adj" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_dexterity_missile_adj" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_dexterity_defense_adj" value="10"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr><td>&nbsp;</td></tr>
-            <tr>
-                <td><input class="sheet-ability-attr" type="text" name="attr_constitution" value=""></td>
-                <td><label class="sheet-ability-label">DEX</label></td>
-                <td>
-                    <table class="sheet-ability-table-sub">
-                        <tr>
-                            <td>Hit Point Adj</td>
-                            <td>System Shock</td>
-                            <td>Resurrection Survival</td>
-                            <td>Poison Save</td>
-                            <td>Regeneration</td>
-                        </tr>
-                        <tr>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_constitution_hp_adj" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_constitution_system_shock" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_constitution_resurrection_survival" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_constitution_poison_save" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_constitution_regeneration" value="10"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr><td>&nbsp;</td></tr>
-            <tr>
-                <td><input class="sheet-ability-attr" type="text" name="attr_charisma" value=""></td>
-                <td><label class="sheet-ability-label">CHR</label></td>
-                <td>
-                    <table class="sheet-ability-table-sub">
-                        <tr>
-                            <td># of Henchmen</td>
-                            <td>Loyalty Base</td>
-                            <td>Reaction Adjustment</td>
-                        </tr>
-                        <tr>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_charisma_num_of_henchmen" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_charisma_loyalty_base" value="10"></td>
-                            <td><input class="sheet-ability-attr-sub-wide" type="text" name="attr_charisma_reaction_adj" value="10"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </div>
-</div>
-
-<div class="sheet-type-content sheet-type2">
+<div class="sheet-container">
+    <input class="sheet-HIDDEN_SHEET_TYPE" name="attr_HIDDEN_SHEET_TYPE" type="hidden" value="player" />
     
-    <h2>NPC Sheet</h2>
+    <div class="sheet-player">
+        <div class="sheet-header">
+            <div class="sheet-tri-col">
+                <input name="attr_character_name" type="text" value="@{character_name}" autocomplete="off" />
+                <label>Character Name</label>
+                <input class="sheet-standard" name="attr_creation_date" type="text" value="(Creation Date)" autocomplete="off" />
+                <label>Creation Date</label> 
+            </div><!--
+        ---><div class="sheet-tri-col-mid">
+                <input name="attr_SHEET_EDITION_TOGGLE" class="sheet-hidden_toggle_edition" type="hidden" value="1" />
+                <div class="sheet-show1e">
+                    <img src="http://i.imgur.com/pn5Ddlb.png" alt="AD&D 1e" class="sheet-edition"/>
+                </div>
+                <div class="sheet-show2e">
+                    <img src="http://i.imgur.com/lu50YiM.png" alt="AD&D 2e" class="sheet-edition" />
+                </div>
+                <h6><input name="attr_IS_SCND" class="sheet-editioncheckbox" type="checkbox" value="1" checked /> - Second Edition</h6>
+            </div><!--
+        ---><div class="sheet-tri-col">
+                <input class="sheet-standard" name="attr_player_name" type="text" value="(Player Name)" autocomplete="off" /><br />
+                <label>Player Name</label> 
+                <input class="sheet-standard" name="attr_campaign" type="text" value="(Campaign)" autocomplete="off" /><br />
+                <label>Campaign</label>   
+            </div><!-- sheet-tri-col -->
+            
+        </div><!-- sheet-header -->
+        
+        <div class="sheet-middle">
+            <h1>Static Section</h1>
+            Cool stuff here
+            <div class="sheet-sectionfooter">
+                Some notes here.
+            </div><!-- sheet-sectionfooter -->
+        </div><!-- sheet-middle -->
+        
+        <div class="sheet-middle">
+            <input name="attr_showhide_cbox_a" class="minmaxcheckbox" type="checkbox" value="1" checked />
+            <input name="attr_hidden_toggle_a" class="sheet-hidden-showhide-a" type="hidden" value="1" />
+            <div class="sheet-min_a">
+                <h1>
+                    Abilities:<input class="sheet-sdciwc-min" name="attr_player_name" type="text" value="STR: 00/00 | DEX: 00 | CON: 00 | INT: 00 | WIS: 00 | CHR: 00" readonly />
+                </h1>
+                <!-- <div class="sheet-sectionfooter">&nbsp;</div> -->
+            </div><!-- sheet-min_a -->
+            <div class="sheet-max_a">
+                <h1>Abilities</h1>
+                <table>
+                    <tr>
+                        <td class="sheet-SDCIWC">
+                            <input title="Current Strength" type="text" name="attr_STR" class="sheet-SDCIWC--top" value="3" autocomplete="off" /><br />
+                            <input title="Normal Strength" type="text" name="attr_STR_normal" class="sheet-SDCIWC--bottom" value="3" autocomplete="off" />
+                        </td>
+                        <td class="sheet-SDCIWC">
+                            <label class="sheet-sdciwc-icon-span">STR</label>
+                            <img src="http://i.imgur.com/cfU7qLc.png" class="sheet-sdciwc-icon" title="Strength" alt="Strength" />
+                        </td>
+                        <td class="sheet-SDCIWC">&nbsp;</td>
+                        <td class="sheet-SDCIWC">
+                            <input title="Current Dexterity" type="text" name="attr_DEX" class="sheet-SDCIWC--top" value="3" autocomplete="off" /><br />
+                            <input title="Normal Dexterity" type="text" name="attr_DEX_normal" class="sheet-SDCIWC--bottom" value="3" autocomplete="off" />
+                        </td>
+                        <td class="sheet-SDCIWC">
+                            <label class="sheet-sdciwc-icon-span">DEX</label>
+                            <img src="http://i.imgur.com/jxecBx6.png" class="sheet-sdciwc-icon" title="Dexterity" alt="Dexterity" />
+                        </td>
+                        <td class="sheet-SDCIWC">&nbsp;</td>
+                        <td class="sheet-SDCIWC">
+                            <input title="Current Constitution" type="text" name="attr_CON" class="sheet-SDCIWC--top" value="3" autocomplete="off" /><br />
+                            <input title="Normal Constitution" type="text" name="attr_CON_normal" class="sheet-SDCIWC--bottom" value="3" autocomplete="off" />
+                        </td>
+                        <td class="sheet-SDCIWC">
+                            <label class="sheet-sdciwc-icon-span">CON</label>
+                            <img src="http://i.imgur.com/IDIWaJL.png" class="sheet-sdciwc-icon" title="Constitution" alt="Constitution" />
+                        </td>
+                        <td class="sheet-SDCIWC">&nbsp;</td>
+                        <td class="sheet-SDCIWC">
+                            <input title="Current Intelligence" type="text" name="attr_INT" class="sheet-SDCIWC--top" value="3" autocomplete="off" /><br />
+                            <input title="Normal Intelligence" type="text" name="attr_INT_normal" class="sheet-SDCIWC--bottom" value="3" autocomplete="off" />
+                        </td>
+                        <td class="sheet-SDCIWC">
+                            <label class="sheet-sdciwc-icon-span">INT</label>
+                            <img src="http://i.imgur.com/vj413H8.png" class="sheet-sdciwc-icon" title="Intelligence" alt="Intelligence" />
+                        </td>
+                        <td class="sheet-SDCIWC">&nbsp;</td>
+                        <td class="sheet-SDCIWC">
+                            <input title="Current Wisdom" type="text" name="attr_WIS" class="sheet-SDCIWC--top" value="3" autocomplete="off" /><br />
+                            <input title="Normal Wisdom" type="text" name="attr_WIS_normal" class="sheet-SDCIWC--bottom" value="3" autocomplete="off" />
+                        </td>
+                        <td class="sheet-SDCIWC">
+                            <label class="sheet-sdciwc-icon-span">WIS</label>
+                            <img src="http://i.imgur.com/Nmvi2kx.png" class="sheet-sdciwc-icon" title="Wisdom" alt="Wisdom" />
+                        </td>
+                        <td class="sheet-SDCIWC">&nbsp;</td>
+                        <td class="sheet-SDCIWC">
+                            <input title="Current Charisma" type="text" name="attr_CHR" class="sheet-SDCIWC--top" value="3" autocomplete="off" /><br />
+                            <input title="Normal Charisma" type="text" name="attr_CHR_normal" class="sheet-SDCIWC--bottom" value="3" autocomplete="off" />
+                        </td>
+                        <td class="sheet-SDCIWC">
+                            <label class="sheet-sdciwc-icon-span">CHR</label>
+                            <img src="http://i.imgur.com/cKMYSy0.png" class="sheet-sdciwc-icon" title="Charisma" alt="Charisma" />
+                        </td>
+                        <td style="border: 0;">
+                            <img src="http://i.imgur.com/rmdM4O5.png" class="sheet-dice"/>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th class="sheet-sdciwc-props">
+                            <span title="STR" class="sheet-sdciwc-rollmod">Roll Modifier</span>
+                        </th>
+                        <th class="sheet-sdciwc-props">
+                            <span title="STR" class="sheet-sdciwc-rollmod">Value Modifier</span>
+                        </th>
+                        <th class="sheet-sdciwc-props">
+                            <span title="STR" class="sheet-sdciwc-rollmod">Value</span>
+                        </th>
+                        <th class="sheet-sdciwc-props">
+                            <span title="STR" class="sheet-sdciwc-rollmod">Rolls</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="sheet-sdciwc-props">
+                            <span title="STR" class="sheet-sdciwc-rollmod">Hit Probability: </span>
+                            <input name="attr_STR_hit_adj" title="STR" class="sheet-sdciwc-rollmod" type="text" value="-" readonly/><br />
+                            <span title="STR" class="sheet-sdciwc-rollmod">Damage Adjustment: </span>
+                            <input name="attr_STR_dam_adj" title="STR" class="sheet-sdciwc-rollmod" type="text" value="-" readonly/><br />
+                            <span title="DEX" class="sheet-sdciwc-rollmod">Reaction Adjustment: </span>
+                            <input name="attr_DEX_reaction_adj" title="DEX" class="sheet-sdciwc-rollmod" type="text" value="-" readonly/><br />
+                            <span title="DEX" class="sheet-sdciwc-rollmod">Missile Attack Adjustment: </span>
+                            <input name="attr_DEX_missile_adj" title="DEX" class="sheet-sdciwc-rollmod" type="text" value="-" readonly/><br />
+                            <span title="CHR" class="sheet-sdciwc-rollmod">Loyalty Base: </span>
+                            <input name="attr_CHR_loyalty_base" title="CHR" class="sheet-sdciwc-rollmod" type="text" value="-" readonly/><br />
+                            <span title="CHR" class="sheet-sdciwc-rollmod">Reaction Adjustment: </span>
+                            <input name="attr_CHR_reaction_adjustment" title="CHR" class="sheet-sdciwc-rollmod" type="text" value="-" readonly/><br />
+                        </td>
+                        <td class="sheet-sdciwc-props">
+                            <span title="DEX" class="sheet-sdciwc-rollmod">Defensive Adjustment: </span>
+                            <input name="attr_DEX_defensive_adj" title="DEX" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                            <span title="CON" class="sheet-sdciwc-rollmod">Hit Point Adjustment: </span>
+                            <input name="attr_CON_hp_adj" title="CON" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                            <span title="CON" class="sheet-sdciwc-rollmod">Poison Save: </span>
+                            <input name="attr_CON_poison" title="CON" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                            <span title="CON" class="sheet-sdciwc-rollmod">Regeneration: </span>
+                            <input name="attr_CON_regeneration" title="CON" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                            <span title="WIS" class="sheet-sdciwc-rollmod">Magical Defense: </span>
+                            <input name="attr_WIS_magical_defense" title="WIS" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                        </td>
+                        <td class="sheet-sdciwc-props">
+                            <span title="STR" class="sheet-sdciwc-rollmod">Weight Allowance: </span>
+                            <input name="attr_STR_weight" title="STR" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                            <span title="STR" class="sheet-sdciwc-rollmod">Maximum Press: </span>
+                            <input name="attr_STR_press" title="STR" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                            <span title="INT" class="sheet-sdciwc-rollmod">Number of Languages: </span>
+                            <input name="attr_INT_languages" title="INT" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                            <span title="INT" class="sheet-sdciwc-rollmod">Min# of Spells per Level: </span>
+                            <input name="attr_INT_spell_min" title="INT" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                            <span title="INT" class="sheet-sdciwc-rollmod">Max# of Spells per Level: </span>
+                            <input name="attr_INT_spell_max" title="INT" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                            <span title="INT" class="sheet-sdciwc-rollmod">Spell Level: </span>
+                            <input name="attr_INT_spell_level" title="INT" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                            <span title="CHR" class="sheet-sdciwc-rollmod">Max# of Henchmen: </span>
+                            <input name="attr_CHR_henchmen" title="CHR" class="sheet-sdciwc-valmod" type="text" value="-" readonly/><br />
+                        </td>
+                        <td class="sheet-sdciwc-props" style="border: 0;">
+                            <button title="STR" class="sheet-sdciwc-roll">Open Doors</button>
+                            <input name="attr_STR_doors" title="STR" class="sheet-sdciwc-roll" type="text" value="-" readonly/><br />
+                            <button title="STR" class="sheet-sdciwc-roll">Bend Bars/Lift Gates</button>
+                            <input name="attr_STR_bars" title="STR" class="sheet-sdciwc-roll" type="text" value="-" readonly/><br />
+                            <button title="CON" class="sheet-sdciwc-roll">System Shock</button>
+                            <input name="attr_CON_system" title="CON" class="sheet-sdciwc-roll" type="text" value="-" readonly/><br />
+                            <button title="CON" class="sheet-sdciwc-roll">Resurrection Survival</button>
+                            <input name="attr_CON_resurrection" title="CON" class="sheet-sdciwc-roll" type="text" value="-" readonly/><br />
+                            <button title="INT" class="sheet-sdciwc-roll">Chance to Learn Spell</button>
+                            <input name="attr_INT_learn" title="INT" class="sheet-sdciwc-roll" type="text" value="-" readonly/><br />
+                            <button title="WIS" class="sheet-sdciwc-roll">Chance of Spell Fail</button>
+                            <input name="attr_WIS_spell_fail" title="WIS" class="sheet-sdciwc-roll" type="text" value="-" readonly/><br />
+                        </td>
+                    </tr>
+                </table>    
+                <div class="sheet-sectionfooter">
+                    Some notes here.
+                </div><!-- sheet-sectionfooter -->
+            </div><!-- sheet-max_a -->
+        </div><!-- sheet-middle -->
+        
+        <div class="sheet-footer">
+            <h1>Footer</h1>
+            Cool stuff here
+            <div class="sheet-sectionfooter"></div>
+        </div><!-- sheet-footer -->
+        <input name="attr_LAST_STR" type="hidden" value="3" />
+        <input name="attr_INDX_STR" type="hidden" value="2" />
+        <input name="attr_LAST_DEX" type="hidden" value="3" />
+        <input name="attr_INDX_DEX" type="hidden" value="2" />
+        <input name="attr_LAST_CON" type="hidden" value="3" />
+        <input name="attr_INDX_CON" type="hidden" value="2" />
+        <input name="attr_LAST_INT" type="hidden" value="3" />
+        <input name="attr_INDX_INT" type="hidden" value="2" />
+        <input name="attr_LAST_WIS" type="hidden" value="3" />
+        <input name="attr_INDX_WIS" type="hidden" value="2" />
+        <input name="attr_LAST_CHR" type="hidden" value="3" />
+        <input name="attr_INDX_CHR" type="hidden" value="2" />
+        
+    </div><!-- sheet-player -->
     
-</div>
+    <div class="sheet-nonplr">
+        sheet-nonplr
+    </div><!-- sheet-nonplr -->
+    
+    <div class="sheet-gmlogs">
+        sheet-gmlogs
+    </div><!-- sheet-gmlogs -->
+    
+    <div class="sheet-apictl">
+        sheet-apictl
+    </div><!-- sheet-apictl -->
+    
+    <div class="sheet-footernav">
+        <label>
+            <input type="radio" name="attr_SHEET_TYPE_SET" value="player" checked />-player |  
+            <input type="radio" name="attr_SHEET_TYPE_SET" value="nonplr" />-nonplr | 
+            <input type="radio" name="attr_SHEET_TYPE_SET" value="gmlogr" />-gmlogr | 
+            <input type="radio" name="attr_SHEET_TYPE_SET" value="apictl" />-apictl
+        </label>
+    </div><!-- sheet-wrapper-type-set -->
+</div><!-- sheet-container -->
 
 
+
+
+<script type="text/worker">
+    var abltbl = {
+            STR: {
+                hit: {
+                    frst: ["NA", "NA", "-3", "-2", "-2", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+1", "+1", "+2", "+2", "+2",
+                            "+3", "+3", "+3", "+4", "+4", "+5", "+6", "+7"],
+                    scnd: ["-5", "-3", "-3", "-2", "-2", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+1", "+1", "+2", "+2", "+2",
+                            "+3", "+3", "+3", "+4", "+4", "+5", "+6", "+7"]
+                },
+                dam: {
+                    frst: ["NA", "NA", "-1", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+1", "+2", "+3", "+3", "+4", "+5",
+                           "+6", "+7", "+8", "+9", "+10", "+11", "+12", "+14"],
+                    scnd: ["-4", "-2", "-1", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+1", "+2", "+3", "+3", "+4", "+5",
+                            "+6", "+7", "+8", "+9", "+10", "+11", "+12", "+14"]
+                },
+                wgt: {
+                    frst: ["NA", "NA", "-350", "-250", "-250", "-150", "-150", "0", "0", "0", "0", "100", "100", "250", "250", "350", "500", "750", "1,000",
+							"1,250", "1,500", "2,000", "3,000", "4,500", "5,000", "6,000", "7,500", "9,000", "1,2000", "15,000"],
+                    scnd: ["1", "1", "5", "10", "10", "20", "20", "35", "35", "40", "40", "45", "45", "55", "55", "70", "85", "110", "135", "160", "185",
+							"235", "335", "485", "535", "635", "785", "935", "1,235", "1,535"]
+                },
+                prs: {
+                    frst: ["NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA",
+							"NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA"],
+                    scnd: ["3", "5", "10", "25", "25", "55", "55", "90", "90", "115", "115", "140", "140", "170", "170", "195", "220", "255", "280", "305",
+							"330", "380", "480", "640", "700", "810", "970", "1,130", "1,440", "1,750"]
+                },
+                drs: {
+                    frst: ["NA", "NA", "1", "1", "1", "1", "1", "1-2", "1-2", "1-2", "1-2", "1-2", "1-2", "1-2", "1-2", "1-3", "1-3", "1-3", "1-3", "1-4",
+							"1-4", "1-4(1)", "1-5(2)", "7-8(3)", "7-8(3)", "9-10(4)", "11-12(4)", "11-12(5)", "19-20(7-8)", "23-24(9-10)"],
+                    scnd: ["1", "1", "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "10", "11", "12", "13", "14", "15(3)", "16(6)",
+							"16(8)", "17(10)", "17(12)", "18(14)", "18(16)", "19(17)", "19(18)"]
+                },
+                bar: {
+                    frst: ["NA", "NA", "0%", '0%', "0%", "0%", "0%", "1%", "1%", "2%", "2%", "4%", "4%", "7%", "7%", "10%", "13%", "16%", "20%", "25%", "30%",
+							"35%", "40%", "50%", "60%", "70%", "80%", "90%", "100%", "100%"],
+                    scnd: ["0%", "0%", "0%", "0%", "0%", "0%", "0%", "1%", "1%", "2%", "2%", "4%", "4%", "7%", "7%", "10%", "13%", "16%", "20%", "25%", "30%",
+							"35%", "40%", "50%", "60%", "70%", "80%", "90%", "95%", "99%"]
+                }
+            },
+            DEX: {
+                act: {
+                    frst: ["NA", "NA", "-3", "-2", "-2", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+1", "+1", "+2", "+2", "+2",
+                            "+3", "+3", "+3", "+4", "+4", "+5", "+6", "+7"],
+                    scnd: ["-5", "-3", "-3", "-2", "-2", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+1", "+1", "+2", "+2", "+2",
+                            "+3", "+3", "+3", "+4", "+4", "+5", "+6", "+7"]
+                },
+                mis: {
+                    frst: ["NA", "NA", "-3", "-2", "-2", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+1", "+1", "+2", "+2", "+2",
+                            "+3", "+3", "+3", "+4", "+4", "+5", "+6", "+7"],
+                    scnd: ["-5", "-3", "-3", "-2", "-2", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+1", "+1", "+2", "+2", "+2",
+                            "+3", "+3", "+3", "+4", "+4", "+5", "+6", "+7"]
+                },
+                def: {
+                    frst: ["NA", "NA", "+4", "+3", "+2", "+1", "0", "0", "0", "0", "0", "0", "0", "0", "-1", "-2", "-3", "-4", "-4", "-4", "-5", "-5", 
+                            "-5", "-6", "-6"],
+                    scnd: ["+5", "+5", "+4", "+3", "+2", "+1", "0", "0", "0", "0", "0", "0", "0", "0", "-1", "-2", "-3", "-4", "-4", "-4", "-5", "-5",
+                            "-5", "-6", "-6"]
+                }
+            },
+            CON: {
+                hpa: {
+                    frst: ["NA", "NA", "-2", "-1", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+2", "+2 (+3)", "+2 (+4)", "+2 (+5)",
+                            "+2(+5)1", "+2(+6)1,2", "+2(+6)1,2", "+2(+6)1,2,3", "+2(+7)1,2,3", "+2(+7)1,2,3"],
+                    scnd: ["-3", "-2", "-2", "-1", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+2", "+2 (+3)", "+2 (+4)", "+2 (+5)",
+                            "+2(+5)1", "+2(+6)1,2", "+2(+6)1,2", "+2(+6)1,2,3", "+2(+7)1,2,3", "+2(+7)1,2,3"]
+                },
+                sss: {
+                    frst: ["NA", "NA", "35%", "40%", "45%", "50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "88%", "91%", "95%", "97%",
+                            "99%", "99%", "99%", "99%", "99%", "99%", "99%", "99%"],
+                    scnd: ["25%", "30%", "35%", "40%", "45%", "50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "88%", "90%", "95%", "97%",
+                            "99%", "99%", "99%", "99%", "99%", "99%", "99%", "100%"]  
+                },
+                res: {
+                    frst: ["NA", "NA", "40%", "45%", "50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "92%", "94%", "96%", "98%",
+                            "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"],
+                    scnd: ["30%", "35%", "40%", "45%", "50%", "55%", "60%", "65%", "70%", "75%", "80%", "85%", "90%", "92%", "94%", "96%", "98%",
+                            "100%", "100%", "100%", "100%", "100%", "100%", "100%", "100%"]
+                },
+                pos: {
+                    frst: ["NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "+1", "+1",
+                            "+2", "+2", "+3", "+3", "+4"],
+                    scnd: ["-2", "-1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "+1", "+1", "+2", "+2", "+3",
+                            "+3", "+4"]
+                },
+                reg: {
+                    frst: ["NA", "NA", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil",
+                            "Nil", "1/6 turns", "1/5 turns", "1/4 turns", "1/3 turns", "1/2 turns", "1/1 turns"],
+                    scnd: ["Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil", "Nil",
+                            "Nil", "1/6 turns", "1/5 turns", "1/4 turns", "1/3 turns", "1/2 turns", "1/1 turns"]
+                }
+            },
+            INT: {
+                lan: {
+                    frst: ["NA", "NA", "0", "0", "0", "0", "0", "+1", "+2", "+2", "+3", "+3", "+4", "+4", "+5", "+6", "+7", "+7", "+7", "+7", "+7", "+7",
+                            "+7", "+7", "+7"],
+                    scnd: ["0*", "1", "1", "1", "1", "1", "1", "1", "2", "2", "2", "3", "3", "4", "4", "5", "6", "7", "8", "9", "10", "11", "12", "15", "20"]
+                },
+                lrn: {
+                    frst: ["--", "--", "--", "--", "--", "--", "--", "--", "35%", "45%", "45%", "45%", "55%", "55%", "65%", "65%", "75%", "85%", "95%",
+                            "96%", "97%", "98%", "99%", "100%", "100%"],
+                    scnd: ["--", "--", "--", "--", "--", "--", "--", "--", "35%", "45%", "45%", "45%", "55%", "55%", "65%", "65%", "75%", "85%", "95%",
+                            "96%", "97%", "98%", "99%", "100%", "100%"]
+                },
+                min: {
+                    frst: ["NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "4", "5", "5", "5", "6", "6", "7", "7", "8", "9", "10(11)", "12", "13", "14",
+                            "15", "16", "17"],
+                    scnd: ["NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA",
+                            "NA", "NA", "NA", "NA"]
+                },
+                max: {
+                    frst: ["--", "--", "--", "--", "--", "--", "--", "--", "6", "7", "7", "7", "9", "9", "11", "11", "14", "18", "All", "All", "All", "All",
+                        "All", "All", "All"],
+                    scnd: ["--", "--", "--", "--", "--", "--", "--", "--", "6", "7", "7", "7", "9", "9", "11", "11", "14", "18", "All", "All", "All", "All",
+                        "All", "All", "All"]
+                },
+                lvl: {
+                    frst: ["NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA",
+                            "NA", "NA", "NA", "NA"],
+                    scnd: ["--", "--", "--", "--", "--", "--", "--", "--", "4th", "5th", "5th", "6th", "6th", "7th", "7th", "8th", "8th", "9th", "9th",
+                            "9th", "9th", "9th", "9th", "9th", "9th"]
+                }
+            },
+            WIS: {
+                def: {
+                    frst: ["NA", "NA", "-3", "-2", "-1", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "+1", "+2", "+3", "+4", "+4", "+4",
+                            "+4", "+4", "+4", "+4", "+4"],
+                    scnd: ["-6", "-4", "-3", "-2", "-1", "-1", "-1", "0", "0", "0", "0", "0", "0", "0", "+1", "+2", "+3", "+4", "+4", "+4",
+                            "+4", "+4", "+4", "+4", "+4"]
+                },
+                sfl: {
+                    frst: ["NA", "NA", "NA", "NA", "NA", "NA", "NA", "NA", "20%", "15%", "10%", "5%", "0%", "0%", "0%", "0%", "0%", "0%", "0%",
+                            "0%", "0%", "0%", "0%", "0%", "0%"],
+                    scnd: ["80%", "60%", "50%", "45%", "40%", "35%", "30%", "25%", "20%", "15%", "10%", "5%", "0%", "0%", "0%", "0%", "0%", "0%",
+                            "0%", "0%", "0%", "0%", "0%", "0%", "0%"]
+                }
+            },
+            CHR: {
+                bas: {
+                    frst: ["NA", "NA", "30%", "25%", "20%", "15%", "10%", "5%", "0%", "0%", "0%", "0%", "0%", "5%", "15%", "20%", "30%", "40%",
+                            "50%", "60%", "70%", "80%", "90%", "100"],
+                    scnd: ["-8", "-7", "-6", "-5", "-4", "-3", "-2", "-1", "0", "0", "0", "0", "0", "+1", "+3", "+4", "+6", "+8", "+10", "+12",
+                            "+14", "+16", "+18", "+20", "+20"]
+                },
+                act: {
+                    frst: ["NA", "NA", "25%", "20%", "15%", "10%", "5%", "0%", "0%", "0%", "0%", "0%", "5%", "10&", "15&", "20&", "25&", "30&",
+                            "40&", "45&", "50&", "55&", "60&", "65&", "70&"],
+                    scnd: ["-7", "-6", "-5", "-4", "-3", "-2", "-1", "0", "0", "0", "0", "0", "+1", "+2", "+3", "+5", "+6", "+7", "+8", "+9",
+                        "+10", "+11", "+12", "+13", "+14"]
+                },    
+                hen: {
+                    frst: ["NA", "NA", "1", "1", "2", "2", "3", "3", "4", "4", "4", "5", "5", "6", "7", "8", "10", "15", "20", "25", "30", "35",
+                            "40", "45", "50"],
+                    scnd: ["0", "1", "1", "1", "2", "2", "3", "3", "4", "4", "4", "5", "5", "6", "7", "8", "10", "15", "20", "25", "30", "35",
+                            "40", "45", "50"]
+                }
+            }
+        },
+        as_number = function (g) {
+            return Number(g)||~~g;
+        },
+        one_to_twentyfive = function (g) {
+            var r = as_number(g);
+            return (r > 0 && r < 26) ? r : false;
+        },
+        one_to_hundred = function (g) {
+            var r = g === "00" ? 100 : (Number(g)||~~g);
+            return (r > 0 && r < 101) ? r : false;
+        },
+        sheet_type_set = function () {
+            getAttrs(["SHEET_TYPE_SET"], function (v) {
+                if (v.SHEET_TYPE_SET) {
+                    setAttrs({HIDDEN_SHEET_TYPE: v.SHEET_TYPE_SET});
+                }
+            });
+        },
+        showhide_cbox_a = function () {
+            getAttrs(["showhide_cbox_a"], function (v) {
+                if (v.showhide_cbox_a) {
+                    setAttrs({hidden_toggle_a: (v.showhide_cbox_a === "1") ? 1 : 0}); 
+                }
+            });
+        },
+        stat_change = function () {
+            var a, g, b, i, updates;
+            getAttrs(["STR","LAST_STR","INDX_STR"], function (v) {
+                updates = {};
+                a = v.STR.split("/");
+                g = false;
+                b = false;
+                i = v.INDX_STR;
+                if (a.length === 1) {
+                    g = one_to_twentyfive(v.STR);
+                    b = true;
+                    if (g) {
+                        i = (g <= 18) ? (g - 1) : (g + 4);
+                    }
+                }
+                if (a.length === 2) {
+                    g = one_to_twentyfive(a[0]);
+                    b = one_to_hundred(a[1]);
+                    if (g && b) {
+                        i = (b < 51) ? 1 : (b > 50 && b < 76) ? 2 : (b > 75 && b < 91) ? 3 : (b > 90 && b < 100) ? 4 : 5;
+                        i = (g <= 17) ? (g - 1) : (g === 18) ? ((g + i) - 1) : (g + 4);
+                        g = (g !== 18) ? g : (g + "/" + b);
+                        b = true; 
+                    }
+                }
+                if (g && b) {
+                    updates["INDX_STR"] = i;
+                    updates["LAST_STR"] = g;
+                    updates["STR"] = g;
+                } else {
+                    updates["STR"] = v.LAST_STR;
+                }
+                setAttrs(JSON.parse(JSON.stringify(updates)));
+            });
+            getAttrs(
+                ["DEX","LAST_DEX","CON","LAST_CON","INT","LAST_INT","WIS","LAST_WIS","CHR","LAST_CHR"],
+                function (v) {
+                    g = one_to_twentyfive(v.DEX);
+                    if (g) {
+                        setAttrs({INDX_DEX: (g - 1), LAST_DEX: g, DEX: g});
+                    } else {
+                        setAttrs({DEX: v.LAST_DEX});
+                    }
+                    g = one_to_twentyfive(v.CON);
+                    if (g) {
+                        setAttrs({INDX_CON: (g - 1), LAST_CON: g, CON: g});
+                    } else {
+                        setAttrs({CON: v.LAST_CON});
+                    }
+                    g = one_to_twentyfive(v.INT);
+                    if (g) {
+                        setAttrs({INDX_INT: (g - 1), LAST_INT: g, INT: g});
+                    } else {
+                        setAttrs({INT: v.LAST_INT});
+                    }
+                    g = one_to_twentyfive(v.WIS);
+                    if (g) {
+                        setAttrs({INDX_WIS: (g - 1), LAST_WIS: g, WIS: g});
+                    } else {
+                        setAttrs({WIS: v.LAST_WIS});
+                    }
+                    g = one_to_twentyfive(v.CHR);
+                    if (g) {
+                        setAttrs({INDX_CHR: (g - 1), LAST_CHR: g, CHR: g});
+                    } else {
+                        setAttrs({CHR: v.LAST_CHR});
+                    }
+                }
+            );
+        };
+    
+    
+    on("change:IS_SCND", function () {
+        getAttrs(["IS_SCND"], function (v) {
+            setAttrs({SHEET_EDITION_TOGGLE: (v.IS_SCND === "1") ? 1 : 0}); 
+        }); 
+    });
+    on("change:SHEET_EDITION_TOGGLE change:INDX_STR change:INDX_DEX change:INDX_CON change:INDX_INT change:INDX_WIS change:INDX_CHR", function () {
+        var lookup;
+        getAttrs(["SHEET_EDITION_TOGGLE", "INDX_STR"], function (v) {
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.STR.hit.frst[v.INDX_STR] : abltbl.STR.hit.scnd[v.INDX_STR];
+            setAttrs({STR_hit_adj: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.STR.dam.frst[v.INDX_STR]  : abltbl.STR.dam.scnd[v.INDX_STR];
+            setAttrs({STR_dam_adj: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.STR.wgt.frst[v.INDX_STR]  : abltbl.STR.wgt.scnd[v.INDX_STR];
+            setAttrs({STR_weight: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.STR.prs.frst[v.INDX_STR]  : abltbl.STR.prs.scnd[v.INDX_STR];
+            setAttrs({STR_press: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.STR.drs.frst[v.INDX_STR]  : abltbl.STR.drs.scnd[v.INDX_STR];
+            setAttrs({STR_doors: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.STR.bar.frst[v.INDX_STR]  : abltbl.STR.bar.scnd[v.INDX_STR];
+            setAttrs({STR_bars: lookup});
+        });
+        getAttrs(["SHEET_EDITION_TOGGLE", "INDX_DEX"], function (v) {
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.DEX.act.frst[v.INDX_DEX]  : abltbl.DEX.act.scnd[v.INDX_DEX];
+            setAttrs({DEX_reaction_adj: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.DEX.mis.frst[v.INDX_DEX]  : abltbl.DEX.mis.scnd[v.INDX_DEX];
+            setAttrs({DEX_missile_adj: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.DEX.def.frst[v.INDX_DEX]  : abltbl.DEX.def.scnd[v.INDX_DEX];
+            setAttrs({DEX_defensive_adj: lookup});
+        });
+        getAttrs(["SHEET_EDITION_TOGGLE", "INDX_CON"], function (v) {
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.CON.hpa.frst[v.INDX_CON]  : abltbl.CON.hpa.scnd[v.INDX_CON];
+            setAttrs({CON_hp_adj: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.CON.sss.frst[v.INDX_CON]  : abltbl.CON.sss.scnd[v.INDX_CON];
+            setAttrs({CON_system: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.CON.res.frst[v.INDX_CON]  : abltbl.CON.res.scnd[v.INDX_CON];
+            setAttrs({CON_resurrection: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.CON.pos.frst[v.INDX_CON]  : abltbl.CON.pos.scnd[v.INDX_CON];
+            setAttrs({CON_poison: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.CON.reg.frst[v.INDX_CON]  : abltbl.CON.reg.scnd[v.INDX_CON];
+            setAttrs({CON_regeneration: lookup});
+        });
+        getAttrs(["SHEET_EDITION_TOGGLE", "INDX_INT"], function (v) {
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.INT.lan.frst[v.INDX_INT]  : abltbl.INT.lan.scnd[v.INDX_INT];
+            setAttrs({INT_languages: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.INT.lrn.frst[v.INDX_INT]  : abltbl.INT.lrn.scnd[v.INDX_INT];
+            setAttrs({INT_learn: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.INT.min.frst[v.INDX_INT]  : abltbl.INT.min.scnd[v.INDX_INT];
+            setAttrs({INT_spell_min: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.INT.max.frst[v.INDX_INT]  : abltbl.INT.max.scnd[v.INDX_INT];
+            setAttrs({INT_spell_max: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.INT.lvl.frst[v.INDX_INT]  : abltbl.INT.lvl.scnd[v.INDX_INT];
+            setAttrs({INT_spell_level: lookup});
+        });
+        getAttrs(["SHEET_EDITION_TOGGLE", "INDX_WIS"], function (v) {
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.WIS.def.frst[v.INDX_WIS]  : abltbl.WIS.def.scnd[v.INDX_WIS];
+            setAttrs({WIS_magical_defense: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.WIS.sfl.frst[v.INDX_WIS]  : abltbl.WIS.sfl.scnd[v.INDX_WIS];
+            setAttrs({WIS_spell_fail: lookup});
+        });
+        getAttrs(["SHEET_EDITION_TOGGLE", "INDX_CHR"], function (v) {
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.CHR.bas.frst[v.INDX_CHR]  : abltbl.CHR.bas.scnd[v.INDX_CHR];
+            setAttrs({CHR_loyalty_base: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.CHR.act.frst[v.INDX_CHR]  : abltbl.CHR.act.scnd[v.INDX_CHR];
+            setAttrs({CHR_reaction_adjustment: lookup});
+            lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.CHR.hen.frst[v.INDX_CHR]  : abltbl.CHR.hen.scnd[v.INDX_CHR];
+            setAttrs({CHR_henchmen: lookup});
+        });
+    });
+    
+    
+    
+    on("change:SHEET_TYPE_SET", sheet_type_set);
+    on("change:showhide_cbox_a", showhide_cbox_a);
+    on("change:STR change:DEX change:CON change:INT change:WIS change:CHR", stat_change);
+</script>
