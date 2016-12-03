@@ -1,125 +1,251 @@
-
-
-
-
-
-/* Sheet Type */
-.charsheet input.sheet-type {
-    float: right;
-    margin-top: 3px;
+/*----------*/
+/*  REMOVE  */
+/*----------*/
+button:before {
+    content: "" !important;
 }
-.charsheet span.sheet-type {
-    float: right;
-}
-.charsheet div.sheet-type-content {
-    display: none;
-}
-.charsheet input.sheet-type:checked ~ div.sheet-type2 {
-    display: block;
-    border: 25px solid green;
-    float: left;
-}
-.charsheet input.sheet-type:not(:checked) ~ div.sheet-type1 {
-    display: block;
-    float: left;
-}
+/*----------*/
+/*  REMOVE  */
+/*----------*/
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.charsheet div.sheet-combatdetail-content {
-    display: none;
-}
-.charsheet input.sheet-combatdetail:checked ~ div.sheet-combatdetail1 {
-    display: block;
-}
-.charsheet input.sheet-combatdetail:not(:checked) ~ div.sheet-combatdetail2 {
-    display: block;
-    background: whitesmoke;
+/*----------*/
+/*  BASE    */
+/*----------*/
+.sheet-container {
+    width: 800px;
+    margin: auto;
     padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: gainsboro;
+}
+.sheet-footernav {
+   padding-top: 3px; 
+}
+.sheet-player,
+.sheet-nonplr,
+.sheet-gmlogs,
+.sheet-apictl,
+.sheet-show1e,
+.sheet-show2e,
+.sheet-min_a,
+.sheet-max_a {
+    display: none;
+    visibility: hidden;
+}
+.sheet-HIDDEN_SHEET_TYPE[value="player"] ~ .sheet-player,
+.sheet-HIDDEN_SHEET_TYPE[value="nonplr"] ~ .sheet-nonplr,
+.sheet-HIDDEN_SHEET_TYPE[value="gmlogr"] ~ .sheet-gmlogs,
+.sheet-HIDDEN_SHEET_TYPE[value="apictl"] ~ .sheet-apictl {
+    display: block;
+    visibility: visible;
+    margin: auto;
+    background: white;
+    width: 750px;
+    padding: 5px;
+    border: 1px solid dimgray;
+    border-right: 2px solid dimgray;
+    border-bottom: 2px solid dimgray;
+    
+}
+.sheet-hidden_toggle_edition[value="0"] ~ .sheet-show1e,
+.sheet-hidden_toggle_edition[value="1"] ~ .sheet-show2e,
+.sheet-hidden-showhide-a[value="0"] ~ .sheet-min_a,
+.sheet-hidden-showhide-a[value="1"] ~ .sheet-max_a {
+    display: block;
+    visibility: visible;
+}
+.sheet-header,
+.sheet-middle,
+.sheet-footer {
+    border-top: 2px solid whitesmoke;
+    border-bottom: 1px solid gainsboro;
+}
+.sheet-header {
+    border-top: 0;
+}
+.sheet-footer {
+    border-bottom: 0;
+}
+/*----------*/
+/*  BASE    */
+/*----------*/
+
+/*--------------*/
+/*  TYPOGRAPHY  */
+/*--------------*/
+label {
+    margin: 0px;
+    margin-bottom: 5px;
+    color: dimgray;
+    font: normal bold 10px/normal Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+h6 {
+    color: dimgray;
+    margin-top: 5px;
+    font: normal bold 10px/normal Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+h1 {
+    color: darkgoldenrod;
+    margin: 5px;
+    font: normal bold 14px/normal Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+div.sheet-sectionfooter {
+    color: dimgray;
+    font: normal 10px/normal Arial, Helvetica, sans-serif;
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+/*--------------*/
+/*  TYPOGRAPHY  */
+/*--------------*/
+
+/*----------*/
+/*  inputs  */
+/*----------*/
+input[type=text] {
+    height:20px;
+    width: 200px;
+    color: #0066ff;
+    font: italic normal bold 12px/normal "Comic Sans MS", cursive, sans-serif;
+    text-align: left;
+    background: transparent;
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+    border-bottom: 1px solid silver;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+input[type=text]:hover {
+    color: red;
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline:0px;
+    border-bottom: 1px solid red;
+}
+.sheet-minmaxcheckbox {
+    float: right;
+    margin: 5px;
+}
+.sheet-editioncheckbox {
+    width: 10px;
+    height: 10px;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*----------*/
+/*  inputs  */
+/*----------*/
 
-.charsheet table.sheet-ability-table {
-    border-collapse: separate;
-    min-width:700px; 
-    table-layout: auto;
+/*----------*/
+/*  SHARED  */
+/*----------*/
+.sheet-tri-col,
+.sheet-tri-col-mid {
+    display: inline-block;
+    vertical-align: text-top;
+    margin: auto;
+    padding: 5px;
+    width: 30%;
 }
-.charsheet table.sheet-ability-table-sub {
-    min-width:600px; 
-    min-height:60px; 
-    table-layout: auto;
-    text-align:center;
-    font-weight: bold;
-    border: 2px solid black;
-    background: wheat;
+.sheet-tri-col-mid {
+    padding: 0px;
+    width: 36%;
 }
-.charsheet tr.sheet-ability-row-odd {
-    background-color:lemonchiffon
-}
-.charsheet tr.sheet-ability-row-even {
-    background-color:palegoldenrod
-}
-.charsheet td.sheet-ability-cell-stat {
-    border: 1px solid black;
-    background-color:beige;
-}
-.charsheet td.sheet-ability-col-odd {
-    text-align:center;
-    font-weight: bold;
-    /*background-color: rgba(255, 255, 255, 0.5);*/
-}
-.charsheet td.sheet-ability-col-even {
-    text-align:center;
-    font-weight: bold;
-    /*background-color: rgba(0, 0, 0, 0.1);*/
+/*----------*/
+/*  SHARED  */
+/*----------*/
 
+/*----------*/
+/*  objects */
+/*----------*/
+img.sheet-edition {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    width: 200px;
+    height: 54px;
 }
-
-.charsheet label.sheet-ability-label {
-    font-family: "Lucida Console", Georgia, Serif;
-    font-size:18pt;
-    text-align:center;
-    display: block; 
-    padding-top: 10px;
-}
-.charsheet input.sheet-ability-attr {
-    width: 40px;
-    height: 40px;
-    font-size:14pt;
-    text-align: center; 
-    pointer-events: none;
-    border-radius:20px;
-    background: linear-gradient(#eee, #fff);
-    border: 3px solid black;
-    box-shadow: 
-        inset 0 1px 4px rgba(0,0,0,0.4);
-}
-.charsheet input.sheet-ability-attr-sub {
-    width: 35px;
-}
-.charsheet input.sheet-ability-attr-sub-wide {
-    width: 50px;
-    border: 1px solid black;
-    padding-bottom: 5px;
-    border-radius:5px;
-    background: linear-gradient(#eee, #fff);
-    box-shadow: 
-        inset 0 1px 4px rgba(0,0,0,0.4);
+img.sheet-dice {
+    width: 100px;
+    height: 50px;
+    padding-left: 20px;
 }
 
-
-.charsheet textarea.sheet-ability-attr-sub-area {
-	width: 120px;
-	height: 30px;
-	display: block; 
-	margin-top: 8px;
-	border-radius:5px;
-	border: 1px solid black;
-    background: linear-gradient(#eee, #fff);
-    box-shadow: 
-        inset 0 1px 4px rgba(0,0,0,0.4);
-
+/* abilities */
+.sheet-sdciwc-icon-span {
+    vertical-align: text-top;
+    text-align: center;
+    margin: auto;
+    color: dimgray;
+    font: normal bold 12px/normal Arial, Helvetica, sans-serif;
 }
+.sheet-sdciwc-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:25px;
+    height:25px;
+}
+input.sheet-SDCIWC--top,
+input.sheet-SDCIWC--bottom {
+    width: 45px;
+    text-align: center;
+}
+td.sheet-SDCIWC:nth-of-type(3n+3) {
+    border-left: 1px solid silver;
+}
+span.sheet-sdciwc-rollmod {
+    color: dimgray;
+    font: normal bold 10px/normal Arial, Helvetica, sans-serif;
+}
+input.sheet-sdciwc-rollmod,
+input.sheet-sdciwc-valmod,
+input.sheet-sdciwc-roll,
+input.sheet-sdciwc-rollmod:hover,
+input.sheet-sdciwc-valmod:hover,
+input.sheet-sdciwc-roll:hover{
+    color: darkred;
+    font: normal 10px/normal Arial, Helvetica, sans-serif;
+    text-align: left;
+    border: 0;
+    width: 30px;
+    cursor: text;
+}
+input.sheet-sdciwc-valmod,
+input.sheet-sdciwc-valmod:hover {
+    width: 60px;
+}
+input.sheet-sdciwc-roll,
+input.sheet-sdciwc-roll:hover {
+    width: 60px;
+}
+button.sheet-sdciwc-roll {
+    font: normal 10px/normal Arial, Helvetica, sans-serif;
+    width: 120px;
+}
+th.sheet-sdciwc-props {
+    border-bottom: 1px solid silver; 
+    text-align: center;
+}
+td.sheet-sdciwc-props {
+    border-right: 1px solid silver;
+    text-align: right; 
+    vertical-align: top;
+}
+/* abilities */
 
-
+/*----------*/
+/*  objects */
+/*----------*/
