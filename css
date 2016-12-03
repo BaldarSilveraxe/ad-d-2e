@@ -213,9 +213,11 @@ span.sheet-sdciwc-rollmod {
 input.sheet-sdciwc-rollmod,
 input.sheet-sdciwc-valmod,
 input.sheet-sdciwc-roll,
+input.sheet-abilities_sum,
 input.sheet-sdciwc-rollmod:hover,
 input.sheet-sdciwc-valmod:hover,
-input.sheet-sdciwc-roll:hover{
+input.sheet-sdciwc-roll:hover,
+input.sheet-abilities_sum:hover {
     color: darkred;
     font: normal 10px/normal Arial, Helvetica, sans-serif;
     text-align: left;
@@ -230,6 +232,12 @@ input.sheet-sdciwc-valmod:hover {
 input.sheet-sdciwc-roll,
 input.sheet-sdciwc-roll:hover {
     width: 60px;
+}
+input.sheet-abilities_sum,
+input.sheet-abilities_sum:hover {
+    color: #0066ff;
+    font: italic normal bold 12px/normal "Comic Sans MS", cursive, sans-serif;
+    width: 450px;
 }
 button.sheet-sdciwc-roll {
     font: normal 10px/normal Arial, Helvetica, sans-serif;
