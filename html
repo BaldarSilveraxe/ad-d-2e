@@ -41,7 +41,7 @@
             <input name="attr_hidden_toggle_a" class="sheet-hidden-showhide-a" type="hidden" value="1" />
             <div class="sheet-min_a">
                 <h1>
-                    Abilities:<input class="sheet-sdciwc-min" name="attr_player_name" type="text" value="STR: 00/00 | DEX: 00 | CON: 00 | INT: 00 | WIS: 00 | CHR: 00" readonly />
+                    Abilities:<input class="sheet-abilities_sum" name="attr_abilities_sum" type="text" value=" STR: 3 | DEX: 3 | CON: 3 | INT: 3 | WIS: 3 | CHR: 3" readonly />
                 </h1>
                 <!-- <div class="sheet-sectionfooter">&nbsp;</div> -->
             </div><!-- sheet-min_a -->
@@ -553,6 +553,9 @@
             setAttrs({CHR_reaction_adjustment: lookup});
             lookup = (v.SHEET_EDITION_TOGGLE === 0) ? abltbl.CHR.hen.frst[v.INDX_CHR]  : abltbl.CHR.hen.scnd[v.INDX_CHR];
             setAttrs({CHR_henchmen: lookup});
+        });
+        getAttrs(["abilities_sum", "STR", "DEX", "CON", "INT", "WIS", "CHR"], function (v) {
+            setAttrs({abilities_sum: " STR: " + v.STR + " | DEX: " + v.DEX + " | CON: " + v.CON + " | INT: " + v.INT + " | WIS: " + v.WIS + " | CHR: " + v.CHR});
         });
     });
     
